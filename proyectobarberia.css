@@ -1,0 +1,337 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {  
+    background-image:url(bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: #cf2d3a;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #cf2d3a;
+}
+
+#menu {
+    display: none;
+}
+
+#menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.header-text h1, span, h3 {
+    font-size: 110px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #cf2d3a;
+    margin-bottom: 15px;
+}
+
+.header-text span {
+    font-size: 25px;
+}
+
+.header-text p {
+    color: #afafaf;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #d82e37;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px; /* Agregado un tamaño de fuente */
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    border: 0;
+}
+
+.btn-1:hover {
+    background-color: #b4272e;
+}
+
+.header-dir {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dir h3 {
+    font-size: 18px;
+}
+
+.dir p {
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.welcome {
+    display: flex;
+}
+
+.welcome-1 {
+    background-image: url(a1.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.welcome-2 {
+    width: 50%;
+    padding: 150px 250px 100px;
+    background-color: #191919;
+}
+
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px; /* Corregido el tamaño de fuente */
+    color: #afafaf;
+    margin: 25px 0;
+}
+
+.b1 {
+    color: #cf2d3a;
+}
+
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #cf2d3a; /* Añadido un tipo de borde sólido */
+    width: 80px;
+}
+
+.services-text p {
+    padding: 50px 150px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0;
+}
+
+.services-1, .services-2, .services-3 {
+    background-color: #070707;
+    padding: 35px 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.services-1 img, .services-2 img,.services-3 img {
+    width: 250px; /* Suponiendo que este es el tamaño correcto, he corregido esto de 25px a 250px */
+    margin-bottom: 15px;
+}
+
+.services-1 h3, .services-2 h3, .services-3 h3 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.services-1 a,.services-2 a, .services-3 a {
+    color: #cf2d3a;
+    font-size: 16px;
+}
+
+
+.prices {
+    background-image:url(https://media.istockphoto.com/id/1362551786/es/foto/barbero-manos-de-peluquero-y-jefe-del-primer-plano-del-cliente-barber%C3%ADa-foto-en-blanco-y-negro.jpg?s=170667a&w=0&k=20&c=j1FmZdd7Js9m_HvViDU9eBMG7qO0YLVTOjKBprEmxOk=) ; /* Reemplaza con la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Ajusta el padding según sea necesario */
+    text-align: center;
+}
+
+.prices-1 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para legibilidad */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    display: inline-block;
+    max-width: 600px;
+    margin: auto; /* Centra el contenido */
+}
+
+.prices-1 h2 {
+    margin-bottom: 20px;
+}
+
+.prices-1 p {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d82e37;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-1:hover {
+    background-color: #b4272e;
+}
+
+
+
+
+
+
+
+
+.personal {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.personal-1 {
+    text-align: center;
+}
+
+.personal-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.personal-1 h3 {
+    font-size: 22px;
+}
+
+.personal-1 p {
+    padding: 0 50px;
+}
+
+.personal-1 a {
+    color: #cf2d3a;
+}
+
+
+
+
+
+
+
